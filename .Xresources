@@ -1,0 +1,56 @@
+!SETTINGS
+URxvt.scrollBar:                false
+! do not scroll with output
+URxvt*scrollTtyOutput:          false
+! scroll in relation to buffer (with mouse scroll or Shift+Page UP)
+URxvt*scrollWithBuffer:         true
+! scroll back to the bottom on keypress
+URxvt*scrollTtyKeypress:        true
+! Font type
+URxvt.font:                     xft:Tamsyn:size=8
+! Clickable URLs
+URxvt.perl-ext:                 default,url-select,tabbedex
+URxvt.keysym.M-u:               perl:url-select:select_next
+URxvt.url-select.launcher:      /usr/bin/xdg-open
+URxvt.url-select.underline:     true
+! Rxvt tabs
+URxvt.tabbed.new-button:        true
+URxvt.tabbed.reopen-on-close:   yes
+URxvt.keysym.Control-t:         perl:tabbedex:new_tab
+URxvt.keysym.Control-Tab:       perl:tabbedex:next_tab
+URxvt.keysym.Control-Shift-Tab: perl:tabbedex:prev_tab
+! Other settings
+URxvt.geometry:                 80x16
+URxvt.saveLines:                12000
+!-------------------------------------------------------------------------
+!COLORS-------------------------------------------------------------------
+!In the valley of the flowers by Kodiak
+
+!Background / Foreground
+*background: #1d1f21
+*foreground: #ddccbb
+!Black / Light black
+*color0: #222222
+*color8: #666666
+!Red / Light red
+*color1:  #cc4747
+*color9:  #bf5858
+!Green / Light green
+*color2:  #a0cf5d
+*color10: #b8d68c
+!Yellow / Light yellow
+*color3:  #e0a524
+*color11: #edB85c
+!Blue / Light blue
+*color4:  #4194d9
+*color12: #60aae6
+!Purple / Light purple
+*color5:  #cc2f6e
+*color13: #db588c
+!Cyan / Light cyan
+*color6:  #6d878d
+*color14:  #42717b
+!White / Light white...?
+*color7:  #dedede
+*color15: #f2f2f2
+!-------------------------------------------------------------------------
