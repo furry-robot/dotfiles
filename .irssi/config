@@ -143,7 +143,6 @@ channels = (
   { name = "#archlinux"; chatnet = "fn"; autojoin = "No"; },
   { name = "#archlinux-offtopic"; chatnet = "fn"; autojoin = "No"; },
   { name = "##php"; chatnet = "fn"; autojoin = "No"; },
-  { name = "#furry_pineapple"; chatnet = "twitch"; autojoin = "yes"; }
 );
 
 aliases = {
@@ -399,7 +398,7 @@ statusbar = {
   };
 };
 settings = {
-  core = { real_name = "Unknown"; user_name = "odin"; nick = "odin"; };
+  core = { real_name = "Unknown"; user_name = ""; nick = ""; };
   "fe-text" = { actlist_sort = "refnum"; };
   "fe-common/core" = {
     theme = "dot";
