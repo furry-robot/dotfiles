@@ -5,25 +5,34 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias s="sudo"
-alias v="vim"
-alias gv="gvim"
-alias gclo="git clone"
-alias ..="cd .."
-alias ls='ls --color=auto'
-PS1=' >>  '
 
-## Ruby Gems
-PATH="`ruby -e 'print Gem.user_dir'`/bin:$PATH"
+# Prompt
+_PROMPT() {
+    _EXIT_STATUS=$?
+    [ $_EXIT_STATUS != 0 ] && _EXIT_STATUS_STR="\[\033[1;30m\][\[\033[1;31m\]$_EXIT_STATUS\[\033[1;30m\]] "
+    PS1="\033[1;30m\]» \[\e[0;33m\]furry\033[1;30m\]╺─╸$_EXIT_STATUS_STR\[\033[1;30m\][\[\033[0m\]\W\[\033[1;30m\]]\[\033[1;34m\];\[\033[0m\] "
+    unset _EXIT_STATUS_STR
+}
 
-## Bin
+PROMPT_COMMAND=_PROMPT
+
+# Aliases
+source ~/.bash_alias
+# Bin
 export PATH=$PATH:~/.bin
-
-## Bundler
+# Bundler
 export GEM_HOME=$(ruby -e 'print Gem.user_dir')
-
-## Jhbuild
-#export PATH=$PATH:~/.local/bin
+# Composer
+export PATH="$PATH:~/.composer/vendor/bin"
+# Functions
+source ~/.bash_function
+# Go
+export GOPATH=~/.go
+export PATH="$PATH:$GOPATH/bin"
+# Hub alias
+eval "$(hub alias -s)"
+# Ruby Gems
+PATH="`ruby -e 'print Gem.user_dir'`/bin:$PATH"
 
 # Autocomplete using tab
 if [ -f /etc/bash_completion ]; then
@@ -48,5 +57,3 @@ vim* ) shift 1; command sudo -E vim "$@" ;;
 * ) command sudo "$@" ;;
 esac
 }
-
-

@@ -20,7 +20,7 @@ URxvt.keysym.Control-t:         perl:tabbedex:new_tab
 URxvt.keysym.Control-Tab:       perl:tabbedex:next_tab
 URxvt.keysym.Control-Shift-Tab: perl:tabbedex:prev_tab
 ! Other settings
-URxvt.geometry:                 80x16
+URxvt.geometry:                 95x18
 URxvt.saveLines:                12000
 !-------------------------------------------------------------------------
 !COLORS-------------------------------------------------------------------

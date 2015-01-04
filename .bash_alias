@@ -1,0 +1,9 @@
+alias s="sudo"
+alias v="vim"
+alias gv="gvim"
+alias gclo="git clone"
+alias ..="cd .."
+alias ls='ls --color=auto'
+alias update="source ~/.bashrc"
+alias cp="cp -i"  # confirm before overwriting something
+alias cls="clear"
