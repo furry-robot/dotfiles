@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo -e "\033[1;34m"
+echo "        ┌───────────────────────────────────┐"
+echo "        │   Taking Screenshot. Say Cheese!  │ "
+echo "        └───────────────────────────────────┘"
+echo "       ╱"
+echo "   ▀▄   ▄▀"
+echo -e "  ▄█▀███▀█▄ "
+echo -e " █▀███████▀█"
+echo -e " ▀ ▀▄▄ ▄▄▀ ▀"
+echo -e "\033[m"
+
+scrot -d 5 -q 85 ~/pictures/screenshots/"%Y-%m-%d_scrot.png" &

@@ -1,0 +1,24 @@
+#!/bin/bash
+
+UPDATES=`pacman -Qu | wc -l`
+
+if [ $UPDATES -eq 1 ]
+then
+    echo -e "\033[0;34m"
+    echo ""
+    echo "   ▀▄   ▄▀  "
+    echo -e "  ▄█▀███▀█▄  \033[1;31m "$UPDATES"\033[0;34m Update available"
+    echo " █▀███████▀█"
+    echo " ▀ ▀▄▄ ▄▄▀ ▀"
+    echo ""
+    echo -e "\033[m"
+else
+    echo -e "\033[0;34m"
+    echo ""
+    echo "   ▀▄   ▄▀  "
+    echo -e "  ▄█▀███▀█▄  \033[1;31m "$UPDATES"\033[0;34m Updates available"
+    echo " █▀███████▀█"
+    echo " ▀ ▀▄▄ ▄▄▀ ▀"
+    echo ""
+    echo -e "\033[m"
+fi
