@@ -1,6 +1,6 @@
 "-----------------------------------------------"
 " Author:       furry-robot                     
-" Source:       http://github.com/robot 
+" Source:       http://github.com/furry-robot 
 "-----------------------------------------------"
 
 " vimconf is not vi-compatible
