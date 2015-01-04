@@ -1,0 +1,3 @@
+[submodule "awesome-furry_robot"]
+	path = awesome-furry_robot
+	url = git://github.com/furry-robot/awesome-furry_robot.git
